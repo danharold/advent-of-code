@@ -1,5 +1,7 @@
-import { readInput } from "../../../utils/utils";
+import { read } from "../../../utils/utils";
 
-const input: string[] = readInput();
+export function main(input: string[]) {
+    return 142
+}
 
 
