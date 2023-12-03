@@ -1,19 +1,24 @@
 {
-	"devDependencies": {
-		"@types/jest": "^29.5.10",
-		"@types/node": "^20.8.9",
-		"ts-node": "^10.9.1",
-		"typescript": "^5.2.2"
-	},
-	"dependencies": {
-		"jest": "^29.7.0",
-		"ts-jest": "^29.1.1"
-	},
-	"scripts": {
-		"test": "jest",
-		"go": "ts-node main.ts"
-	},
-	"compilerOptions": {
-		"module": "CommonJS"
-	}
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.8.9",
+    "prettier": "3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4
+  }
 }
