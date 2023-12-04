@@ -59,12 +59,15 @@ export function getDigits(line: string) {
     //log('numbers: ', numbers);
 
     let result: string = '';
-    if (line.indexOf(numbers[0]) < firstIndex) {
+    if (numbers.length !== 0 && line.indexOf(numbers[0]) < firstIndex) {
         result += String(numbers[0]);
     } else {
         result += firstMatch;
     }
-    if (line.lastIndexOf(numbers.slice(-1)) > lastIndex) {
+    if (
+        numbers.length !== 0 &&
+        line.lastIndexOf(numbers.slice(-1)) > lastIndex
+    ) {
         result += numbers.slice(-1);
     } else {
         result += lastMatch;
