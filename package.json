@@ -11,7 +11,7 @@
         "ts-jest": "^29.1.1"
     },
     "scripts": {
-        "test": "jest --watch"
+        "test": "jest --watch --verbose=false"
     },
     "compilerOptions": {
         "module": "CommonJS"
