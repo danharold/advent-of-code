@@ -9,5 +9,7 @@ export function read(path?: string): string[] {
     } else {
         input = fs.readFileSync(currentPath + '/input.txt', 'utf-8');
     }
-    return input.split('\n');
+    return input.split('\n').map((e) => {
+        return e.trim();
+    });
 }

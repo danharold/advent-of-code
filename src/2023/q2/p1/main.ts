@@ -7,7 +7,7 @@ export function main(input: string[]) {
     let maxBlue = 14;
 
     let games = input.map((game) => {
-        return parseGame(game.trim());
+        return parseGame(game);
     });
     let result = 0;
 
